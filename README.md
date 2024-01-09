@@ -80,11 +80,13 @@ In Keras, the Sequential model allows for the linear stacking of layers, making 
 
 4) Dense Layer: The final layer with a single neuron and a sigmoid activation function, making it suitable for binary classification tasks by outputting probabilities.
 
+
 Possible Applications:
 
 a) Social Media Content Moderation
 
 b) News Aggregator Systems
+
 
 Possible Improvements:
 
@@ -93,6 +95,8 @@ a) Incorporating pre-trained word embeddings (e.g., Word2Vec, GloVe) for richer 
 b) Experiment with different neural network architectures and hyperparameter tuning.
 
 c) Continuous model retraining to adapt to evolving language patterns.
+
+________________________________________________________________________________________________
 
 Understanding the output:
 
