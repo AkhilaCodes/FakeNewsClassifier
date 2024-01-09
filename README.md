@@ -8,34 +8,34 @@ In this project I aimed to develop a robust Fake News Classifier using a neural 
 
 Libraries used:
 
-NLTK (Natural Language Toolkit): Used for comprehensive natural language processing 
+1) NLTK (Natural Language Toolkit): Used for comprehensive natural language processing 
 
 NLTK played a crucial role in text cleaning and preprocessing. It facilitated tasks such as stemming, where words were reduced to their root form, promoting uniformity in the representation of words. Additionally, NLTK's stopwords module was employed to remove common English words that typically do not contribute much information to the meaning of a sentence.
 
 
-Pandas: Essential for data manipulation and analysis
+2) Pandas: Essential for data manipulation and analysis
 
 It was utilized to load the dataset containing news articles, drop any rows with missing values, and reset the DataFrame index. This ensured a clean and structured dataset for subsequent processing.
 
 
-NumPy: An integral library for numerical operations in Python
+3) NumPy: An integral library for numerical operations in Python
 
 NumPy was employed to efficiently handle numerical arrays. The one-hot encoded representations of the text data were converted to NumPy arrays, providing a streamlined and efficient structure for subsequent processing in the neural network model.
 
-TensorFlow: Served as the backend for neural network operations
+4) TensorFlow: Served as the backend for neural network operations
 
 TensorFlow provided the computational foundation for building and training deep learning models. It efficiently handled the low-level operations required for neural network training, allowing for seamless execution of complex computations on hardware accelerators.
 
-Keras: A high-level neural network API that runs on top of TensorFlow
+5) Keras: A high-level neural network API that runs on top of TensorFlow
 
 Keras simplified the process of designing and training neural networks by offering a user-friendly interface. In this project, the Sequential model from Keras was used to sequentially stack layers for building the architecture of the neural network. 
 
-Scikit-Learn: A versatile machine learning library that includes various tools for data preprocessing and model evaluation. 
+6) Scikit-Learn: A versatile machine learning library that includes various tools for data preprocessing and model evaluation. 
 
 Scikit-Learn played a pivotal role in several aspects:
-Train-Test Splitting: The `train_test_split` function from Scikit-Learn was employed to split the dataset into training and testing sets, facilitating the evaluation of the model's performance on unseen data.
+a) Train-Test Splitting: The `train_test_split` function from Scikit-Learn was employed to split the dataset into training and testing sets, facilitating the evaluation of the model's performance on unseen data.
 
-Performance Evaluation: Scikit-Learn's metrics, such as the confusion matrix and accuracy score, were used to quantitatively assess the model's classification performance. These metrics provided insights into the model's ability to correctly classify instances of genuine and fake news.
+b) Performance Evaluation: Scikit-Learn's metrics, such as the confusion matrix and accuracy score, were used to quantitatively assess the model's classification performance. These metrics provided insights into the model's ability to correctly classify instances of genuine and fake news.
 
 Process Steps:
 
@@ -55,25 +55,25 @@ Neural Network Model for Text Classification:
 
 The neural network model employs a sequential architecture with several key components:
    
-Embedding Layer: Converts words into dense vectors, capturing semantic relationships.
+1) Embedding Layer: Converts words into dense vectors, capturing semantic relationships.
 
-LSTM Layer: Long Short-Term Memory layer for understanding context and sequential dependencies in the input data.
+2) LSTM Layer: Long Short-Term Memory layer for understanding context and sequential dependencies in the input data.
 
-Dropout Layers: Introduce regularization by randomly dropping neurons during training, preventing overfitting.
+3) Dropout Layers: Introduce regularization by randomly dropping neurons during training, preventing overfitting.
 
-Dense Layer: The final layer with a single neuron and a sigmoid activation function for binary classification.
+4) Dense Layer: The final layer with a single neuron and a sigmoid activation function for binary classification.
 
 Keras API Sequential Architecture:
 
 In Keras, the Sequential model allows for the linear stacking of layers, making it simple to create a neural network step by step.
 
-Embedding Layer: Represents word vectors in a continuous space, capturing semantic relationships between words.
+1) Embedding Layer: Represents word vectors in a continuous space, capturing semantic relationships between words.
 
-Dropout Layers: Randomly drop a fraction of input units during training to prevent overfitting and improve model generalization.
+2) Dropout Layers: Randomly drop a fraction of input units during training to prevent overfitting and improve model generalization.
 
-LSTM Layer: A type of recurrent neural network layer that is well-suited for understanding sequential data by maintaining a memory of previous timesteps.
+3) LSTM Layer: A type of recurrent neural network layer that is well-suited for understanding sequential data by maintaining a memory of previous timesteps.
 
-Dense Layer: The final layer with a single neuron and a sigmoid activation function, making it suitable for binary classification tasks by outputting probabilities.
+4) Dense Layer: The final layer with a single neuron and a sigmoid activation function, making it suitable for binary classification tasks by outputting probabilities.
 
 Possible Applications:
 
