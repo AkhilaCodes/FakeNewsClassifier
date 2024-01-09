@@ -33,6 +33,7 @@ Keras simplified the process of designing and training neural networks by offeri
 6) Scikit-Learn: A versatile machine learning library that includes various tools for data preprocessing and model evaluation. 
 
 Scikit-Learn played a pivotal role in several aspects:
+
 a) Train-Test Splitting: The `train_test_split` function from Scikit-Learn was employed to split the dataset into training and testing sets, facilitating the evaluation of the model's performance on unseen data.
 
 b) Performance Evaluation: Scikit-Learn's metrics, such as the confusion matrix and accuracy score, were used to quantitatively assess the model's classification performance. These metrics provided insights into the model's ability to correctly classify instances of genuine and fake news.
@@ -51,7 +52,8 @@ Process Steps:
    
    f. Evaluation: Utilizes Scikit-Learn to assess the model's performance using a confusion matrix and accuracy score.
 
-Neural Network Model for Text Classification:
+
+- Neural Network Model for Text Classification:
 
 The neural network model employs a sequential architecture with several key components:
    
@@ -63,7 +65,7 @@ The neural network model employs a sequential architecture with several key comp
 
 4) Dense Layer: The final layer with a single neuron and a sigmoid activation function for binary classification.
 
-Keras API Sequential Architecture:
+- Keras API Sequential Architecture:
 
 In Keras, the Sequential model allows for the linear stacking of layers, making it simple to create a neural network step by step.
 
@@ -77,23 +79,23 @@ In Keras, the Sequential model allows for the linear stacking of layers, making 
 
 Possible Applications:
 
-Social Media Content Moderation
-News Aggregator Systems
+a) Social Media Content Moderation
+b) News Aggregator Systems
 
 Possible Improvements:
 
-Incorporating pre-trained word embeddings (e.g., Word2Vec, GloVe) for richer semantic understanding.
-Experimenting with different neural network architectures and hyperparameter tuning.
-Continuous model retraining to adapt to evolving language patterns.
+a) Incorporating pre-trained word embeddings (e.g., Word2Vec, GloVe) for richer semantic understanding.
+b) Experiment with different neural network architectures and hyperparameter tuning.
+c) Continuous model retraining to adapt to evolving language patterns.
 
 Understanding the output:
 
 The confusion matrix provides a detailed breakdown of the performance of a classification model. In this case, the confusion matrix is a 2x2 matrix.
 
 [[3118, 301],
- [231,  2385]]
+[231,  2385]]
 
-Understanding the confusion matrix:
+- Understanding the confusion matrix:
 
 - True Positives (TP): 2385
   - These are cases where the actual class is positive (e.g., genuine news), and the model correctly predicted them as positive.
