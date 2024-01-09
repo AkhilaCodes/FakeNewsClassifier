@@ -53,6 +53,7 @@ Process Steps:
    f. Evaluation: Utilizes Scikit-Learn to assess the model's performance using a confusion matrix and accuracy score.
 
 
+
 - Neural Network Model for Text Classification:
 
 The neural network model employs a sequential architecture with several key components:
@@ -64,6 +65,8 @@ The neural network model employs a sequential architecture with several key comp
 3) Dropout Layers: Introduce regularization by randomly dropping neurons during training, preventing overfitting.
 
 4) Dense Layer: The final layer with a single neuron and a sigmoid activation function for binary classification.
+
+
 
 - Keras API Sequential Architecture:
 
@@ -80,12 +83,15 @@ In Keras, the Sequential model allows for the linear stacking of layers, making 
 Possible Applications:
 
 a) Social Media Content Moderation
+
 b) News Aggregator Systems
 
 Possible Improvements:
 
 a) Incorporating pre-trained word embeddings (e.g., Word2Vec, GloVe) for richer semantic understanding.
+
 b) Experiment with different neural network architectures and hyperparameter tuning.
+
 c) Continuous model retraining to adapt to evolving language patterns.
 
 Understanding the output:
@@ -95,7 +101,7 @@ The confusion matrix provides a detailed breakdown of the performance of a class
 [[3118, 301],
 [231,  2385]]
 
-- Understanding the confusion matrix:
+Understanding the confusion matrix:
 
 - True Positives (TP): 2385
   - These are cases where the actual class is positive (e.g., genuine news), and the model correctly predicted them as positive.
